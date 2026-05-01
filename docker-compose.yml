@@ -1,0 +1,8 @@
+services:
+  detector-app:
+    build: .
+    container_name: detector_container
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
